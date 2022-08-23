@@ -7,8 +7,8 @@ phases:
     commands:
     - echo Logging in to Amazon ECR...
     - aws --version
-    - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 274201610284.dkr.ecr.us-east-1.amazonaws.com
-    - IMAGE_URI=274201610284.dkr.ecr.us-east-1.amazonaws.com/users-authentication:latest
+    - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 474007463914.dkr.ecr.us-east-1.amazonaws.com
+    - IMAGE_URI=474007463914.dkr.ecr.us-east-1.amazonaws.com/pensioner-details:latest
     - IMAGE_NAME=pensioner-details
     - CONTAINER_NAME=pensioner-details
   build:
